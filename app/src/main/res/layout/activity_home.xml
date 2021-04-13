@@ -7,4 +7,133 @@
     android:background="@android:color/black"
     tools:context=".ui.HomeActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:textColor="@color/yellow"
+            android:text="Select Category"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar">
+    <LinearLayout
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/business"/>
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/yellow"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Business, Finance Economics"/>
+    </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/computer"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="Computers, Science &amp; Technology"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/music"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="Entertainment, Art &amp; Culture"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/news"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="General News &amp; Current Affairs"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/health"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="Health &amp; Medicine"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/fav"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="Favourite"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
